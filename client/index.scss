@@ -1,0 +1,85 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import '~video.js/dist/video-js.css';
+
+//@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One');
+
+.bg-dark {
+  background-color: #192734 !important;
+  border-bottom: 1px solid hsla(0,0%,100%,.05);
+}
+
+html,body{
+  //font-family: 'Dosis', sans-serif;
+  font-family: 'Concert One', cursive;
+  background-color: #15202b;
+  color: #FFFFFF;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid hsla(0,0%,100%,.05);
+}
+
+a {
+  color: #1da1f2;
+}
+a:hover {
+  color: #1da1f2;
+}
+
+.btn-dark {
+  background-color: #ec297b;
+}
+.btn-dark:hover {
+  background-color: #ec3a85;
+}
+
+.form-group .form-control {
+  border: 1px solid #464646;
+  background-color: #253341;
+  color: #8899a6;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all .15s ease-in;
+  font-weight: 300;
+  width: 100%;
+  min-height: 42px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 259px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #15202b;
+  border-right: 1px solid hsla(0,0%,100%,.05);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 259px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
