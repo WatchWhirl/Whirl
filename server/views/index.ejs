@@ -1,16 +1,144 @@
 <!doctype html>
 <html lang="en">
+<!--<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Whirl</title>
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/favicon.png?v=2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    
+    <script async defer data-domain="whirl.tv" src="https://plausible.io/js/plausible.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc4t7UZAAAAADsgsjjyJbZdxHUerbLUyNyAiBIO"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lc4t7UZAAAAADsgsjjyJbZdxHUerbLUyNyAiBIO', {action:'validate_captcha'}).then(function(token) {
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
+</head>-->
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Whirl</title>
-<link rel="stylesheet" href="/style.css">
-<link rel="icon" href="/favicon.png?v=2" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+    <meta charset="UTF-8">
+    <title>Whirl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="/font/iconsmind-s/css/iconsminds.css" />
+    <link rel="stylesheet" href="/font/simple-line-icons/css/simple-line-icons.css" />
+
+    <link rel="stylesheet" href="/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/vendor/bootstrap.rtl.only.min.css" />
+    <link rel="stylesheet" href="/css/vendor/component-custom-switch.min.css" />
+    <link rel="stylesheet" href="/css/vendor/perfect-scrollbar.css" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="icon" href="/favicon.png?v=2" />
+    
+    <script async defer data-domain="whirl.tv" src="https://plausible.io/js/plausible.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc4t7UZAAAAADsgsjjyJbZdxHUerbLUyNyAiBIO"></script>
+    <script>
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6Lc4t7UZAAAAADsgsjjyJbZdxHUerbLUyNyAiBIO', {action:'validate_captcha'}).then(function(token) {
+                document.getElementById('g-recaptcha-response').value = token;
+            });
+        });
+    </script>
 </head>
-<body>
-<div id="root"></div>
-<script src="/bundle.js"></script>
+<body id="app-container" class="menu-default show-spinner">
+
+    <div class="menu">
+        <div class="main-menu">
+            <div class="scroll">
+                <ul class="list-unstyled">
+                    <li class="active">
+                        <a href="#discover">
+                            <i class="iconsminds-compass-1"></i>
+                            <span>Discover</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="iconsminds-bucket"></i> Blank Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" target="_blank">
+                            <i class="iconsminds-library"></i> Docs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-menu">
+            <div class="scroll">
+                <ul class="list-unstyled" data-link="discover">
+                    <li>
+                        <a href="/">
+                            <i class="simple-icon-game-controller"></i> <span class="d-inline-block">Gaming</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="simple-icon-pencil"></i> <span class="d-inline-block">Art</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="simple-icon-earphones"></i> <span class="d-inline-block">Music</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="simple-icon-chemistry"></i> <span class="d-inline-block">Tech</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="simple-icon-mustache"></i> <span class="d-inline-block">IRL</span>
+                        </a>
+                    </li>
+                </ul>              
+            </div>
+        </div>
+    </div>
+
+    <div id="root"></div>
+
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <p class="mb-0 text-muted">ColoredStrategies 2019</p>
+                    </div>
+                    <div class="col-sm-6 d-none d-sm-block">
+                        <ul class="breadcrumb pt-0 pr-0 float-right">
+                            <li class="breadcrumb-item mb-0">
+                                <a href="#" class="btn-link">Review</a>
+                            </li>
+                            <li class="breadcrumb-item mb-0">
+                                <a href="#" class="btn-link">Purchase</a>
+                            </li>
+                            <li class="breadcrumb-item mb-0">
+                                <a href="#" class="btn-link">Docs</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/js/vendor/perfect-scrollbar.min.js"></script>
+    <script src="/js/vendor/mousetrap.min.js"></script>
+    <script src="/js/dore.script.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/bundle.js"></script>
 </body>
 </html>

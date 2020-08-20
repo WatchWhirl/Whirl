@@ -64,8 +64,8 @@ export default class Navbar extends React.Component {
                         <div className="row">
                             <p>
                                 You can use <a target="_blank" href="https://obsproject.com/">OBS</a> or
-                                <a target="_blank" href="https://www.xsplit.com/">XSplit</a> to Live stream. If you're
-                                using OBS, go to Settings > Stream and select Custom from service dropdown.
+                                 <a target="_blank" href="https://www.xsplit.com/">XSplit</a> to Live stream. If you're
+                                using OBS, go to Settings → Stream and select Custom from service dropdown.
                                 Enter <b>rtmp://stream.whirl.tv/live</b> in server input field. Also, add your stream key.
                                 Click apply to save.
                             </p>

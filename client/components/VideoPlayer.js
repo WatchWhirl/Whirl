@@ -49,17 +49,22 @@ export default class VideoPlayer extends React.Component {
 
     render() {
         return (
-            <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-10 col-lg-8 mx-auto mt-5">
-                    <h1>{this.props.match.params.username}'s stream</h1>
-                    {this.state.stream ? (
-                        <div data-vjs-player>
-                            <video ref={node => this.videoNode = node} className="player video-js vjs-big-play-centered"/>
+            <main>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 mx-auto mt-5">
+                            <h1>{this.props.match.params.username}'s stream</h1>
+                            <div class="separator mb-5"></div>
+                            {this.state.stream ? (
+                                <div data-vjs-player>
+                                    <video ref={node => this.videoNode = node} className="player video-js vjs-big-play-centered"/>
+                                </div>
+                            ) : ' Loading ... '}
+                            <button type="submit" class="btn btn-dark">Follow</button>
                         </div>
-                    ) : ' Loading ... '}
-                    <button type="submit" class="btn btn-dark">Follow</button>
+                    </div>
                 </div>
-            </div>
+            </main>
         )
     }
 }
