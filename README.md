@@ -21,7 +21,9 @@ sudo apt install software-properties-common -y
 
 Step 5:
 
-sudo add-apt-repository ppa:jonathonf/ffmpeg-4 && sudo apt install ffmpeg -y
+sudo add-apt-repository ppa:jonathonf/ffmpeg-4
+
+sudo apt install ffmpeg -y
 
 Step 6:
 
