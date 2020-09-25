@@ -31,7 +31,7 @@ Step 7:
 
 npm install
 
-Step 8:
+Step 8 (Development):
 
 npm run start 
 
@@ -39,9 +39,17 @@ open another session/tab
 
 npm run watch
 
+Step 8 (Production):
+
+npm install pm2 -g
+
+cd server
+
+pm2 start app.js
+
 Step 9:
 
-go to localhost to see the login, register an account and login to view the rest of the pages
+go to localhost or domain to see the login, register an account and login to view the rest of the pages
 
 Step 10:
 
